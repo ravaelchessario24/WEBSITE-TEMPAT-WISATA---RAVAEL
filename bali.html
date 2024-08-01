@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            background: #ddd;
+            border-radius: 5px;
+        }
+
+        .hero, .attractions, .packages, .contact {
+            position: relative;
+            min-height: 100vh;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero video, .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        .highlight {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            display: inline-block;
+        }
+
+        .highlight h3 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .highlight p {
+            font-size: 1.25rem;
+            color: #666;
+        }
+
+        .attractions, .packages, .contact {
+            padding: 50px 20px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        .attractions h3, .packages h3, .contact h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h4 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .packages .list-item, .contact .list-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        .packages .list-item h4, .contact .list-item h4 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .packages .list-item p, .contact .list-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BALI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#attractions">Atraksi</a></li>
+                <li><a href="#packages">Paket</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <video autoplay muted loop>
+                <source src="Videos/bali.mp4" type="video/mp4">
+            </video>
+            <h2>Selamat Datang di Bali</h2>
+            <p>Surga tropis dengan pantai yang indah, budaya yang kaya, dan kehidupan malam yang bersemangat.</p>
+            <div class="highlight">
+                <h3>Promo Spesial di Bali!</h3>
+                <p>Diskon hingga 50% untuk paket wisata Bali selama musim liburan. Jangan lewatkan kesempatan ini!</p>
+            </div>
+        </section>
+        <section id="attractions" class="attractions">
+            <h3>Atraksi Populer di Bali</h3>
+            <div class="card-container">
+                <div class="card">
+                    <img src="Images/KUTA_BEACH.jpeg" alt="Pantai Kuta" onclick="location.href='transaksi_bali.html'">
+                    <h4>Pantai Kuta</h4>
+                    <p>Pantai terkenal dengan pemandangan matahari terbenam yang menakjubkan dan ombak yang cocok untuk berselancar.</p>
+                </div>
+                <div class="card">
+                    <img src="Images/UBUD.jpeg" alt="Taman Ubud" onclick="location.href='transaksi_bali.html'">
+                    <h4>Ubud</h4>
+                    <p>Pusat seni dan budaya dengan pemandangan sawah yang hijau dan tradisi yang kaya.</p>
+                </div>
+                <div class="card">
+                    <img src="Images/TANAH_LOT.jpeg" alt="Tanah Lot" onclick="location.href='transaksi_bali.html'">
+                    <h4>Tanah Lot</h4>
+                    <p>Tempat suci di tepi pantai dengan pemandangan matahari terbenam yang spektakuler.</p>
+                </div>
+            </div>
+        </section>
+        <section id="packages" class="packages">
+            <h3>Paket Wisata Bali</h3>
+            <div class="list-item">
+                <h4>Paket Liburan Keluarga</h4>
+                <p>Termasuk penerbangan, penginapan, dan tur di Bali selama 5 hari 4 malam. Cocok untuk keluarga dengan anak-anak.</p>
+            </div>
+            <div class="list-item">
+                <h4>Paket Romantis</h4>
+                <p>Termasuk transportasi VIP, hotel bintang 5, dan makan malam romantis di tepi pantai selama 4 hari 3 malam.</p>
+            </div>
+            <div class="list-item">
+                <h4>Paket Petualangan</h4>
+                <p>Termasuk aktivitas seperti rafting, mendaki gunung, dan snorkeling selama 6 hari 5 malam.</p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h3>Kontak Kami</h3>
+            <div class="list-item">
+                <h4>Alamat Kantor</h4>
+                <p>Jl. Sunset Road No. 45, Kuta, Bali, Indonesia</p>
+            </div>
+            <div class="list-item">
+                <h4>Email</h4>
+                <p>info@baliwisata.com</p>
+            </div>
+            <div class="list-item">
+                <h4>Telepon</h4>
+                <p>+62 361 1234567</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bali Wisata. All rights reserved.</p>
+    </footer>
+</body>
+</html>
